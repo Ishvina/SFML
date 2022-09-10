@@ -73,14 +73,14 @@ A feature request should always contain a rationale for the change. Whenever you
 Testing is a crucial part of integrating new changes – the larger the number of people who help us, the faster we can proceed with development, and the quicker we can find and eliminate bugs.
 
 //
-For any new feature, multiple new unit test examples, testing positive and negative test cases, should be provided to verify contribution.
-For any bugfix, at least one new integration test should be added to cover the bug and ensures that there's no regression.
+For any new feature, multiple new unit test (https://www.guru99.com/unit-testing-guide.html) examples, testing positive and negative test cases, should be provided to verify contribution.
+For any bugfix, at least one new integration test (https://www.guru99.com/integration-testing.html) should be added to cover the bug and ensures that there's no regression.
 Ensure the code produced is complete and builds without errors. 
 
-For more testing strategies view the forum. 
+For more testing strategies view the forum (https://en.sfml-dev.org/forums/index.php?topic=24355.msg164632#msg164632). 
 
 Where to Test:
-Files to add/create unit and integration tests can be found in the test folder.
+Files to add/create unit and integration tests can be found in the test folder (https://github.com/SFML/SFML/tree/master/test).
 
 Before submitting a pull request, try completing these tasks to ensure proper testing:
     * [ ] Test on Linux
