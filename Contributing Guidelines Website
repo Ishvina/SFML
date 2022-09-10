@@ -1,13 +1,13 @@
-#Contribution Guidelines
+# Contribution Guidelines
 
 You would like to see a feature implemented or a bug fixed in SFML? Great! Contributions to SFML are highly appreciated, be it in the form of general ideas, concrete suggestions or code patches.
 
 This document explains how you can contribute. By carefully reading it, you minimize the time it takes on your and on our side until a modification is implemented. Since we can't (and don't want to) implement everything, the following guidelines clarify what it takes for a contribution to be accepted.
 
-#General Considerations
+# General Considerations
 In case of any questions or doubt (and after reading all the available resources), feel free to ask on the forum. Before opening GitHub issues and/or pull requests, use the forum to discuss your matter.
 
-#Scope
+# Scope
 Contributions must fit into one of the following SFML modules:
 
 - System
@@ -27,10 +27,10 @@ There are several reasons why SFML does not support these features:
 
 The rule of thumb is: If a feature can easily be added on top of SFML without modifying the core library, it is probably not a good candidate to be integrated.
 
-#Code Style
+# Code Style 
 Contributions in the form of code must follow our syntactical conventions. Before submitting a pull request, please make sure your commits really adhere to them. For design and semantics (e.g. "do I use a pointer or a reference", "what is the correct type here"), have a look at existing SFML source code.
 
-#Philosophy
+# Philosophy
 SFML has been developed under the following considerations, keep them in mind when contributing:
 
 - Simple. Features are easy to use. Even more complex functionality should be provided in the most simple way possible, using abstraction where necessary.
@@ -39,7 +39,7 @@ SFML has been developed under the following considerations, keep them in mind wh
 - Clean code. Source code is well-structured, modular, readable and uses modern C++ idioms. Avoid clever hacks or micro-optimizations.
 - Pragmatic. SFML does not attempt to solve every possible problem, instead it tries to offer functionality that is useful to a wide variety of users.
 
-#Contributing
+# Contributing
 
 Reporting bugs
 1. Make sure it is really a bug and not a misunderstanding of what SFML is supposed to do. Check the documentation again to be sure.
@@ -52,17 +52,17 @@ Reporting bugs
     - Screenshots and/or videos, if necessary, to demonstrate certain behavior.
     - Anything else that helps identify the problem.
 
-#Requesting features
+# Requesting Features
 If you have an idea for a new feature, and it's within SFML's scope (see above), create a proper thread on the dedicated sub-forum.
 
 A feature request should always contain a rationale for the change. Whenever you suggest a feature, argue from a user perspective: in which way is SFML limited? What use cases does the feature allow? How can other users benefit from the change?
 
-#Testing
+# Testing
 Testing is a crucial part of integrating new changes – the larger the number of people who help us, the faster we can proceed with development, and the quicker we can find and eliminate bugs.
 
 Feel free to participate in forum discussions, GitHub issues or existing pull requests. You can also try out the latest changes in the master Git branch and report any issues that you might find back to us on the forum.
 
-#Sending patches/pull requests
+# Sending patches/pull requests
 In general code is only accepted when a proper GitHub issue already exists (usually preceded by a forum discussion). Make sure that nobody else is already working on an issue, or simply offer help and wait for a response.
 
 Patches are accepted through GitHub pull requests. These are the steps required to send in such a request:
