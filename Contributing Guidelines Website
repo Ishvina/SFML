@@ -80,7 +80,11 @@ Ensure the code produced is complete and builds without errors.
 For more testing strategies view the forum (https://en.sfml-dev.org/forums/index.php?topic=24355.msg164632#msg164632). 
 
 Where to Test:
+<<<<<<< HEAD
+Files to add/create unit and integration tests can be found in the test folder (https://github.com/SFML/SFML/tree/master/test). Match the module the contribution was made in to the correct test module. 
+=======
 Files to add/create unit and integration tests can be found in the test folder (https://github.com/SFML/SFML/tree/master/test).
+>>>>>>> d17e9e89f38c224198eeb273c3d96124f921a1b1
 
 Before submitting a pull request, try completing these tasks to ensure proper testing:
     * [ ] Test on Linux
@@ -88,7 +92,6 @@ Before submitting a pull request, try completing these tasks to ensure proper te
     * [ ] Test on macOS
     * [ ] Test on iOS
     * [ ] Test on Android
-
 //
 
 Feel free to participate in forum discussions, GitHub issues or existing pull requests. You can also try out the latest changes in the master Git branch and report any issues that you might find back to us on the forum.
@@ -108,8 +111,10 @@ In the pull request, provide the following information:
 - Concise description of the modification.
 - Reference the GitHub issue that you implemented/fixed.
 - Link to the forum thread where the discussion originated.
-// - Select which platforms the new/revised code has been tested on 
-- A minimal complete code example that helps people to test the implementation.The idea is that anybody can test the functionality with minimal effort. If external files are needed, add a link to them.
+//
+ - Select which platforms the new/revised code has been tested on 
+- A minimal complete code example that helps people to test the implementation.The idea is that anybody can test the functionality with minimal effort. If external files are needed, add a link to them. (https://stackoverflow.com/help/mcve) An example is also provided when submitting a pull request.
+//
 - Bugfix: the code should reproduce the bug.
 - Feature: show how the feature is used.
 For smaller issues, a single commit should be attached to the pull request. If you implement a larger modification, you may split the commits, but please do so semantically ("implemented feature X, fixed bug Y") and not chronologically ("started X, continued Y, finished Z"). Keep in mind that in addition to adding new commits, you can also overwrite existing ones by force-pushing (git push --force-with-lease) to your repository branch.
