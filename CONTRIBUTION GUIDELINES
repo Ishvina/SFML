@@ -4,6 +4,16 @@ You would like to see a feature implemented or a bug fixed in SFML? Great! Contr
 
 This document explains how you can contribute. By carefully reading it, you minimize the time it takes on your and on our side until a modification is implemented. Since we can't (and don't want to) implement everything, the following guidelines clarify what it takes for a contribution to be accepted.
 
+- [General Considerations](#General-Considerations)
+    - [Scope](#Scope)
+    - [Code Style](#Code-Style)
+    - [Philosophy](#Philosophy)
+- [Contributing](#Contributing)
+    - [Reporting bugs](#Reporting- bugs)
+    - [Requesting Features](#Requesting-features)
+    - [Testing](#Testing)
+    - [Sending patches/pull requests](#Sending patches/pull-requests)
+
 # General Considerations
 In case of any questions or doubt (and after reading all the available resources), feel free to ask on the forum. Before opening GitHub issues and/or pull requests, use the forum to discuss your matter.
 
@@ -60,6 +70,23 @@ A feature request should always contain a rationale for the change. Whenever you
 # Testing
 Testing is a crucial part of integrating new changes – the larger the number of people who help us, the faster we can proceed with development, and the quicker we can find and eliminate bugs.
 
+For any new feature, multiple new unit test (https://www.guru99.com/unit-testing-guide.html) examples, testing positive and negative test cases, should be provided to verify contribution.
+For any bugfix, at least one new integration test (https://www.guru99.com/integration-testing.html) should be added to cover the bug and ensures that there's no regression.
+Ensure the code produced is complete and builds without errors. 
+
+For more testing strategies view the forum (https://en.sfml-dev.org/forums/index.php?topic=24355.msg164632#msg164632). 
+
+Where to Test:
+Files to add/create unit and integration tests can be found in the test folder (https://github.com/SFML/SFML/tree/master/test). 
+Match the module the contribution was made in to the correct test module. 
+
+Before submitting a pull request, try completing these tasks to ensure proper testing:
+    * [ ] Test on Linux
+    * [ ] Test on Windows
+    * [ ] Test on macOS
+    * [ ] Test on iOS
+    * [ ] Test on Android
+    
 Feel free to participate in forum discussions, GitHub issues or existing pull requests. You can also try out the latest changes in the master Git branch and report any issues that you might find back to us on the forum.
 
 # Sending patches/pull requests
@@ -77,6 +104,9 @@ In the pull request, provide the following information:
 - Concise description of the modification.
 - Reference the GitHub issue that you implemented/fixed.
 - Link to the forum thread where the discussion originated.
+- Select which platforms the new/revised code has been tested on 
+- A minimal complete code example that helps people to test the implementation.The idea is that anybody can test the functionality with minimal effort. If external files are needed, add a link to them. (https://stackoverflow.com/help/mcve) 
+An example is also provided when submitting a pull request.
 - Bugfix: the code should reproduce the bug.
 - Feature: show how the feature is used.
 For smaller issues, a single commit should be attached to the pull request. If you implement a larger modification, you may split the commits, but please do so semantically ("implemented feature X, fixed bug Y") and not chronologically ("started X, continued Y, finished Z"). Keep in mind that in addition to adding new commits, you can also overwrite existing ones by force-pushing (git push --force-with-lease) to your repository branch.
